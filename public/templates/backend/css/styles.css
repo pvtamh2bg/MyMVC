@@ -1,0 +1,537 @@
+a:hover{
+    color: #4C9ED9;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+body {
+    font-family: Arial,Tahoma;
+    font-size: 13px;
+    line-height: 150%;
+}
+section.itq-wrapper{
+    margin: 0px;
+    padding: 5px;
+}
+section.itq-wrapper header.header-top{
+    height: 52px;
+    background: #25649F;
+}
+section.itq-wrapper header h2 {
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    height: 52px;
+    line-height: 52px;
+    color: rgb(255, 255, 255);
+    font-weight: normal ;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/*====== .itq-tabs ===*/
+
+section.itq-wrapper .navigator{
+    height: 30px;
+    border: 1px solid #CCC;
+    background: #c0c0c0;
+    margin: 0px 0px 5px 0px;
+}
+section.itq-wrapper .navigator  ul.main{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+section.itq-wrapper .navigator ul.main li.main{
+    float: left;
+    position: relative;
+}
+section.itq-wrapper .navigator ul.main li.main:hover ul.item{
+    display: block;
+}
+section.itq-wrapper .navigator ul.main li.main a.main{
+    height: 30px;
+    display: block;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 30px;
+    border: 1px solid #CCC;
+    border-top: none;
+    border-bottom: none;
+    color: #000;
+}
+section.itq-wrapper .navigator ul.main li.main.active a.main,
+section.itq-wrapper .navigator ul.main li.main:hover a.main{
+    background: #FFF;
+}
+section.itq-wrapper .navigator  ul.item{
+    margin: 0px;
+    padding: 1px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    list-style: outside none none;
+    display: none;
+    z-index: 999;
+    width: 168px;
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #333;
+}
+section.itq-wrapper .navigator  ul.item:after,
+section.itq-wrapper .navigator  ul.item:before{
+    bottom: 100%;
+    left: 15px;
+    border: medium solid transparent;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+section.itq-wrapper .navigator  ul.item:before{
+    border-color: rgba(51, 51, 51, 0) rgba(51, 51, 51, 0) #333;
+    border-width: 7px;
+    margin-left: -7px;
+}
+section.itq-wrapper .navigator  ul.item:after{
+    border-width: 6px;
+    margin-left: -6px;
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #FFF;
+}
+section.itq-wrapper .navigator ul.item li.item{
+    height: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+section.itq-wrapper .navigator ul.item li.item:hover ul.sub{
+    display: block;
+}
+section.itq-wrapper .navigator ul.item li.item a.item {
+    color: #333;
+    line-height: 30px;
+    padding: 0px 10px;
+    display: block;
+    text-decoration: none;
+}
+section.itq-wrapper .navigator ul.item li.item:hover a.item{
+    color:#FF5800;
+}
+section.itq-wrapper .navigator  ul.sub{
+    margin: 0px;
+    padding: 1px;
+    position: absolute;
+    left: 168px;
+    top: -2px;
+    list-style: outside none none;
+    display: none;
+    z-index: 999;
+    width: 168px;
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #333;
+}
+section.itq-wrapper .navigator  ul.sub:after,
+section.itq-wrapper .navigator  ul.sub:before{
+    right: 100%;
+    top: 15px;
+    border: medium solid transparent;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+section.itq-wrapper .navigator  ul.sub:before{
+    border-color: rgba(51, 51, 51, 0) #333 rgba(51, 51, 51, 0) rgba(51, 51, 51, 0);
+    border-width: 7px;
+    margin-top: -7px;
+}
+section.itq-wrapper .navigator  ul.sub:after{
+    border-color: rgba(255, 255, 255, 0) #FFF rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-width: 6px;
+    margin-top: -6px;
+}
+section.itq-wrapper .navigator ul.sub li.sub{
+    height: 30px;
+    box-sizing: border-box;
+}
+section.itq-wrapper .navigator ul.sub li.sub a.sub {
+    color: #333;
+    line-height: 30px;
+    padding: 0px 10px;
+    display: block;
+    text-decoration: none;
+}
+section.itq-wrapper .navigator ul.sub li.sub:hover a.sub{
+    color:#FF5800;
+}
+section.itq-wrapper .navigator  ul.user-account{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+section.itq-wrapper .navigator  ul.user-account li{
+    float: left;
+}
+section.itq-wrapper .navigator  ul.user-account li a{
+    padding: 0px 10px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*====== .itq-tabs ===*/
+
+section.itq-tabs{
+    height: 30px;
+    border: 1px solid #CCC;
+    margin: 0px 0px 5px 0px;
+}
+section.itq-tabs h1{
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    font-size: 13px;
+    height: 30px !important;
+    line-height: 30px;
+    float: left;
+}
+section.itq-tabs ul{
+    padding: 0px;
+    float: right;
+    margin: 0px 5px 0px 0px;
+    list-style: outside none none;
+}
+section.itq-tabs ul li{
+    float: left;
+}
+section.itq-tabs ul li.active a,
+section.itq-tabs ul li:hover a{
+    color: #3BB4FF;
+}
+section.itq-tabs ul li a{
+    padding: 0px 15px;
+    line-height: 30px;
+    text-decoration: none;
+}
+section.itq-views{
+    min-height: 500px;
+    border: 1px solid #D1D1D1;
+    margin: 0px 0px 5px 0px;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+section.itq-views .advanged{
+    margin: 0px 0px 5px 0px;
+    overflow: hidden;
+}
+section.itq-views .advanged .search{
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+section.itq-views .advanged .search form select {
+    padding: 3px 5px;
+}
+section.itq-views .advanged .search form .text {
+    padding: 3px 5px;
+}
+section.itq-views .advanged .search form .submit {
+    padding: 2px 5px;
+}
+section.itq-views .advanged .tool{
+     float: right;
+     margin: 10px 0px 0px 10px;
+ }
+section.itq-views .advanged .tool input{
+    padding: 2px 5px;
+}
+/*========= TABLE BODY ========*/
+
+section.itq-views .table {
+    border: 1px solid #D1D1D1;
+    margin: 0px 10px;
+    background: #fff;
+    margin: 0px 0px 10px 0px;
+}
+section.itq-views .table .main  {
+    width: 100%;
+    border-collapse: collapse;
+}
+section.itq-views .table .main th{
+     height: 30px;
+     line-height: 30px;
+     font-size: 12px;
+     font-weight: bold;
+     background: #e7e7e7;
+     border-bottom: 1px solid #999;
+     border-right: 1px solid #FFF;
+ }
+section.itq-views .table .main td{
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 5px;
+    border-right: 1px solid #efefef;
+    vertical-align: middle;
+}
+section.itq-views .table .main td input.order{
+    width: 30px;
+    text-align: center;
+}
+section.itq-views .table .main td.left {
+    text-align: left;
+}
+section.itq-views .table .main td.right{
+    text-align: right;
+}
+section.itq-views .table .main tr:nth-child(even) td{
+    background: #f3f1f1;
+}
+section.itq-views .table .main tr:hover td{
+    background: #3BB4FF;
+}
+/*========= PAGINATION ========*/
+section.itq-views .pagination{
+    overflow: hidden;
+}
+section.itq-views .pagination ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+section.itq-views .pagination  ul li{
+    float: left;
+    margin: 0px 0px 0px 5px;
+}
+section.itq-views .pagination  ul li a{
+    display: block;
+    padding: 3px 8px;
+    border: 1px solid #CCC;
+    float: left;
+    text-align: center;
+
+ }
+section.itq-views .pagination  ul li.active a,
+section.itq-views .pagination  ul li:hover a{
+    background: #000;
+    color: #FFF;
+    text-decoration: none;
+}
+/*========= .ITQ-FORM ========*/
+
+section.itq-form{
+    min-height: 168px;
+    border: 1px solid #ccc;
+    margin: 0px 0px 5px 0px;
+    background: #F4F4F4;
+    overflow: hidden;
+    position: relative;
+}
+section.itq-form .main-panel{
+    border: 1px solid #CCC;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin: 10px 288px 10px 10px;
+    background: #FFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+section.itq-form .main-panel header{
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #25649F;
+    line-height: 30px;
+    padding: 0px 0px 0px 15px;
+    font-weight: bold;
+}
+section.block {
+    padding: 20px 0px 0px 10px;
+}
+section.block label.item {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+section.block  p.title{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 168px;
+}
+section.block label.item input.txtText{
+    width: 450px;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+}
+section.block label.item .txtArea{
+    width: 750px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+    height:190px;
+}
+section.block label.item .short{
+    height: 50px;
+}
+section.block label.item .cbselect{
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+}
+section.block .checkbox-radio{
+    display: block;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+}
+section.block .checkbox-radio .group{
+    overflow: hidden;
+}
+section.block .checkbox-radio .group label{
+    margin: 0px 0px 10px 0px;
+    width: 168px;
+    float: left;
+}
+section.block .checkbox-radio .group label input{
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+section.block  .action{
+    margin: 0px 0px 20px 0px;
+}
+section.block  .action .group input{
+    padding: 5px 32px;
+    margin: 0px 10px 0px 0px;
+}
+section.itq-form .side-panel{
+    min-height: 168px;
+    width: 268px;
+    margin: 0px 0px 10px 0px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+section.itq-form .side-panel .block header
+{
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #25649F;
+    line-height: 30px;
+    padding: 0px 0px 0px 15px;
+    font-weight: bold;
+}
+aside.side-panel section.block {
+    margin: 0px 0px 10px 0px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 0px;
+}
+aside.side-panel section.block .container {
+    padding: 10px 0px 0px 10px;
+}
+aside.side-panel section.block label.item {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+aside.side-panel section.block  p.title{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 93px;
+}
+aside.side-panel section.block label.item input.txtText{
+    width: 235px;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+}
+aside.side-panel section.block label.item .txtArea{
+    width: 235px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+    height: 168px;
+}
+aside.side-panel section.block label.item .short{
+    height: 50px;
+}
+aside.side-panel section.block label.item .cbselect{
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    font-size: 11px;
+    color: #333;
+    width: 247px;
+}
+aside.side-panel section.block .checkbox-radio{
+    display: block;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+}
+aside.side-panel section.block .checkbox-radio .group{
+    overflow: hidden;
+}
+aside.side-panel section.block .checkbox-radio .group label{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 81px;
+}
+aside.side-panel section.block .checkbox-radio .group label input{
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+aside.side-panel section.block  .action{
+    margin: 0px 0px 20px 0px;
+}
+aside.side-panel section.block  .action .group input{
+    padding: 5px 32px;
+    margin: 0px 10px 0px 0px;
+}
+.itq-form .error{
+    text-align: center;
+    color: red;
+    margin: 10px 0px 0px 10px;
+}
+.itq-form .error ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.itq-form .error ul li{
+
+}
+footer{
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    background: #25649F;
+}
+
+.select{
+    background: orangered !important;
+    color: #000000;
+}
+.display-none{
+    display: none;
+}

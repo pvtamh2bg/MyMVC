@@ -1,0 +1,43 @@
+footer{
+    padding: 20px;
+    background: #0060af;
+    color: #FFF;
+}
+/****** MAIN-CONTENT *****/
+.main-content{
+    margin: 100px 0px 0px 0px;
+}
+.main-content .post{
+    background: #FFFFFF;
+    padding: 20px;
+    font-size: 1.1em;
+    font-family: tahoma, arial, sans-serif;
+}
+.main-content .post article{
+    /*overflow: hidden;*/
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-content .post article figure{
+
+}
+.main-content .post article figure img{
+   display: table;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+}
+.main-content .post article figure figcaption{
+
+}
+.main-content .post article figure figcaption h2.title_article a{
+ font-family: tahoma, arial, sans-serif;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.main-content .post article figure figcaption .description_article{
+    color: #333;
+}

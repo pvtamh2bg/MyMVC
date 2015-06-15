@@ -1,0 +1,13 @@
+{
+   "autoload": {
+       "classmap": [
+           "application/core"
+       ],
+       "PSR-4":[
+           namespace
+       ]
+       "files":[
+           "application/functions/sanitize.php"
+           ]
+   }
+}
